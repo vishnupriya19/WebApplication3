@@ -20,7 +20,7 @@ namespace WebApplication3
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://0.0.0.0:50000;https://0.0.0.0:50001");
+                    webBuilder.UseUrls("http://0.0.0.0:50010;https://0.0.0.0:50011");
                     webBuilder.UseKestrel();
                     webBuilder.UseStartup<Startup>();
                 });
