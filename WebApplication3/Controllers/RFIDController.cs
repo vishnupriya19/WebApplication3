@@ -180,6 +180,10 @@ namespace WebApplication3.Controllers
             tBeacon.Time = tDateTime.ToString("yyyMMdd HH:mm:ss");
             tBeacon.Rssi = rpt.rssi == null ? "" : rpt.rssi.ToString();
             tBeacon.Name = rpt.bleName;
+            if (rpt.battery != null)
+            {
+                tBeacon.Battery = rpt.battery.Value.ToString();
+            }
             if (rpt.temperature != null)
             {
                 tBeacon.Temperature = rpt.temperature.Value.ToString("0.#");
